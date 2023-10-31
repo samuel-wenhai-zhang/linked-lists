@@ -1,26 +1,10 @@
 public class IntLinkedListRunner {
     public static void main(String[] args) {
         IntLinkedList myList = new IntLinkedList();
-        System.out.println(myList); // []
-        System.out.println(myList.size());
+        int[] vals = {1, 3, 10, -3, 18, 27};
+        myList.addAll(vals);
+        System.out.println(myList.indexOf(0));
+        System.out.println(myList.indexOf(3));
 
-        myList.add(5);
-        System.out.println(myList); // [5]
-        System.out.println(myList.size());
-
-
-        myList.add(10);
-        System.out.println(myList); // [5, 10]
-        System.out.println(myList.size());
-
-
-        myList.add(15);
-        System.out.println(myList); // [5, 10, 15]
-        System.out.println(myList.size());
-
-        while (myList.size() >= 0) {
-            System.out.println(myList.remove());
-            System.err.println(myList);
-        }
     }
 }
